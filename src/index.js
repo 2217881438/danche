@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './App';
 import './index.css';
 import Life from './pages/demo/Life';
+import Admin from './admin';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Life />
+    <Admin />
     {/* <App></App> */}
   </React.StrictMode>,
   document.getElementById('root')
