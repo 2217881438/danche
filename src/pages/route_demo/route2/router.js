@@ -9,13 +9,13 @@ export default class IRouter extends React.Component{
     render(){
         return(
             <Router>
-                <Routes>
-                    <Home>
+                <Home>
+                    <Routes>
                         <Route path="/" element={<Main/>}></Route>
                         <Route path="/about" element={<About/>}></Route>
                         <Route path="/topic" element={<Topic/>}></Route>
-                    </Home>
-                </Routes>
+                    </Routes>
+                </Home>
             </Router>
             
         );
