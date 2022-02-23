@@ -1,23 +1,25 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Main from './../route1/Main'
+import React from 'react'
+import {HashRouter as Router,Route} from 'react-router-dom'
+import Main from './Main'
 import About from './../route1/about'
 import Topic from './../route1/topic'
-import Home from "./Home";
-
+import Home from './Home'
 export default class IRouter extends React.Component{
+
     render(){
-        return(
+        return (
             <Router>
                 <Home>
-                    <Routes>
-                        <Route path="/" element={<Main/>}></Route>
-                        <Route path="/about" element={<About/>}></Route>
-                        <Route path="/topic" element={<Topic/>}></Route>
-                    </Routes>
+                    <Route path="/main" render={()=>
+                        <Main>
+                            <Route path="/main/a" component={About}></Route>
+                        </Main>   
+                    }></Route>
+                    <Route path="/about" component={About}></Route>
+                    <Route exact={true} path="/about/abc" component={About}></Route>
+                    <Route path="/topics" component={Topic}></Route>
                 </Home>
             </Router>
-            
         );
     }
 }

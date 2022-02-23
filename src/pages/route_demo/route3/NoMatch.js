@@ -1,10 +1,10 @@
 import React from 'react'
-export default class Topic extends React.Component {
 
+export default class Home extends React.Component {
     render() {
         return (
             <div>
-                this is topic page.
+               404 No Pages.
             </div>
         );
     }
