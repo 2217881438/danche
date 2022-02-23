@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Life from './pages/demo/Life';
 import Admin from './admin';
+// import Home from './pages/route_demo/route1/Home'
+import Router from './pages/route_demo/route2/router'
+// import registerServiceWorker from './registerServiceWorker'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Admin />
+    {/* <Admin /> */}
+    {/* <Home /> */}
+    <Router />
     {/* <App></App> */}
   </React.StrictMode>,
   document.getElementById('root')
