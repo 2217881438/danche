@@ -11,10 +11,8 @@ import {
     DatePicker,
     TimePicker,
     Upload,
-    Icon,
     message,
     InputNumber,
-    Divider,
 } from "antd";
 import moment from "moment";
 import { LoadingOutlined, PlusOutlined } from "@ant-design/icons";
